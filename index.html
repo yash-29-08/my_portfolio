@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Yash Vardhan | B.Tech CSE Honours Student Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Yash Vardhan, a 2nd Year B.Tech Computer Science (Honours) student passionate about web development and problem solving." />
+  <meta name="keywords" content="student portfolio, B.Tech CSE, web development, programming, projects" />
+
+  <!-- Google Fonts — Playfair Display (headings) + Plus Jakarta Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================
+       NAVIGATION BAR
+  ============================= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Logo / Brand Name -->
+      <a href="#home" class="nav-logo">Yash<span>Vardhan</span></a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger Menu Button (mobile) -->
+      <div class="nav-right">
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- ============================
+       SECTION 1: HOME / HERO
+  ============================= -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+
+      <!-- Left: Text Content -->
+      <div class="hero-text fade-in">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Yash Vardhan</h1>
+        <p class="hero-role">
+          B.Tech CSE (Honours) Student &amp;
+          <span class="typed-text" id="typed-text">Aspiring Developer</span>
+        </p>
+        <p class="hero-description">
+          A passionate 2nd-year Computer Science student building skills in
+          web development, data structures, and problem solving. Always
+          learning, always growing.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary" id="view-projects-btn">
+            <i class="fas fa-code"></i> View Work
+          </a>
+          <a href="#contact" class="btn btn-outline" id="contact-me-btn">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="hero-socials">
+          <a href="https://github.com/yash-29-08" target="_blank" rel="noopener" aria-label="GitHub"
+            class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yash-vardhan-748284382/" target="_blank" rel="noopener"
+            aria-label="LinkedIn" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:vardhanyash1970@email.com" aria-label="Email" class="social-icon">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Clean Minimal Developer Code Card -->
+      <div class="hero-image fade-in">
+        <div class="code-card" id="hero-code-card">
+
+          <!-- Window Header -->
+          <div class="code-card-header">
+            <div class="code-dots">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+            </div>
+            <span class="code-file-name"><i class="fab fa-js-square"></i> yash.config.js</span>
+            <span class="code-status-pill"><span class="pulse-dot"></span> Available</span>
+          </div>
+
+          <!-- Code Snippet -->
+          <div class="code-card-body">
+            <pre><code><span class="tok-kw">const</span> <span class="tok-var">developer</span> = {
+  <span class="tok-prop">name</span>: <span class="tok-str">"Yash Vardhan"</span>,
+  <span class="tok-prop">role</span>: <span class="tok-str">"B.Tech CSE (Honours)"</span>,
+  <span class="tok-prop">focus</span>: [<span class="tok-str">"Generative AI"</span>, <span class="tok-str">"Full-Stack Web"</span>],
+  <span class="tok-prop">flagship</span>: <span class="tok-str">"PortGen — text to portfolio"</span>,
+  <span class="tok-prop">status</span>: <span class="tok-str">"Building &amp; learning daily 🚀"</span>
+};</code></pre>
+          </div>
+
+          <!-- Interactive Action & Live Output Ribbon -->
+          <div class="code-card-footer">
+            <div class="code-action-buttons">
+              <button class="code-btn" id="btn-run-portgen">
+                <i class="fas fa-bolt"></i> Run PortGen
+              </button>
+              <button class="code-btn" id="btn-fun-fact">
+                <i class="fas fa-lightbulb"></i> Quick Fact
+              </button>
+            </div>
+            <div class="code-live-output" id="code-live-output">
+              <i class="fas fa-terminal"></i> <span>Ready. Click a button to test live.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <a href="#about" class="scroll-down" aria-label="Scroll to About section">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+
+  <!-- ============================
+       SECTION 2: ABOUT ME
+  ============================= -->
+  <section id="about" class="section">
+    <div class="container">
+
+      <h2 class="section-title fade-in">About <span>Me</span></h2>
+      <p class="section-subtitle fade-in">A little bit about who I am</p>
+
+      <div class="about-grid">
+
+        <!-- About Text -->
+        <div class="about-text fade-in">
+          <p>
+            Hi! I'm <strong>Yash Vardhan</strong>, a second-year B.Tech student majoring in
+            Computer Science with Honours. I'm from Mathura, India, and I'm
+            passionate about technology, problem solving, and building things that
+            make life easier.
+          </p>
+          <p>
+            I enjoy learning new programming concepts, working on personal projects,
+            and participating in coding challenges. When I'm not coding, you'll find me
+            reading tech blogs, watching tutorials, or playing chess.
+          </p>
+
+          <!-- Info Cards -->
+          <div class="about-info-grid">
+            <div class="info-card">
+              <i class="fas fa-university"></i>
+              <div>
+                <span class="info-label">College</span>
+                <span class="info-value">GLA University</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <span class="info-label">Degree</span>
+                <span class="info-value">B.Tech CSE (Honours)</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-calendar-alt"></i>
+              <div>
+                <span class="info-label">Year</span>
+                <span class="info-value">2nd Year (2025–2029)</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">Mathura, Uttar Pradesh, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Career Objective -->
+        <div class="about-objective fade-in">
+          <div class="objective-card">
+            <div class="objective-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3>Career Objective</h3>
+            <p>
+              To leverage my computer science knowledge and programming skills to
+              build innovative solutions that solve real-world problems. I aim to
+              grow as a full-stack developer, contribute to open-source projects,
+              and eventually work in a dynamic tech environment where I can continue
+              learning and making a meaningful impact.
+            </p>
+          </div>
+
+          <!-- Quick Stats -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Certificates</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Years Learning</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+       SECTION 3: SKILLS
+  ============================= -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+
+      <h2 class="section-title fade-in">My <span>Skills</span></h2>
+      <p class="section-subtitle fade-in">Technologies I work with</p>
+
+      <div class="skills-grid">
+
+        <!-- Programming Languages -->
+        <div class="skill-category fade-in">
+          <div class="skill-category-header">
+            <i class="fas fa-code"></i>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-tags">
+
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skill-category fade-in">
+          <div class="skill-category-header">
+            <i class="fas fa-globe"></i>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category fade-in">
+          <div class="skill-category-header">
+            <i class="fas fa-database"></i>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category fade-in">
+          <div class="skill-category-header">
+            <i class="fas fa-tools"></i>
+            <h3>Tools &amp; Platforms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+
+        <!-- Currently Learning -->
+        <div class="skill-category fade-in learning">
+          <div class="skill-category-header">
+            <i class="fas fa-book-open"></i>
+            <h3>Currently Learning</h3>
+          </div>
+          <div class="skill-tags">
+            <!-- <span class="skill-tag learning-tag">React.js</span>
+            <span class="skill-tag learning-tag">Node.js</span> -->
+            <span class="skill-tag learning-tag">DSA (Java)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+       SECTION 4: PROJECTS
+  ============================= -->
+  <section id="projects" class="section">
+    <div class="container">
+
+      <h2 class="section-title fade-in">My <span>Projects</span></h2>
+      <p class="section-subtitle fade-in">Things I've built while learning</p>
+
+      <div class="projects-grid">
+
+        <!-- Project Card 1: PortGen -->
+        <div class="project-card fade-in" id="project-1">
+          <div class="project-image">
+            <div class="project-img-placeholder">
+              <i class="fas fa-wand-magic-sparkles"></i>
+            </div>
+            <div class="project-overlay">
+              <span class="project-category">portfolioception</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">PortGen</h3>
+            <p class="project-tagline">Give it text. Get a webpage.</p>
+            <div class="project-flow">
+              <span>.txt</span> ↓ <span>Gemini</span> ↓ <span>JSON</span> ↓ <span>HTML</span> ↓ <span>your
+                portfolio.html</span>
+            </div>
+            <p class="project-description">
+              Feed it a .txt file of your info. Gemini structures it into JSON, and that JSON becomes a full HTML
+              portfolio — handed back to you as one file.
+            </p>
+            <p class="project-note">wait... a portfolio maker inside a portfolio?</p>
+            <div class="project-tech">
+              <span class="tech-tag">Gemini API</span>
+              <span class="tech-tag">JSON</span>
+              <span class="tech-tag">HTML Generation</span>
+              <span class="tech-tag">Text-File Processing</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/yash-29-08" target="_blank" rel="noopener" class="project-link-btn">
+                <i class="fab fa-github"></i> View Project ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2: EchoMind -->
+        <div class="project-card fade-in" id="project-2">
+          <div class="project-image">
+            <div class="project-img-placeholder">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="project-overlay">
+              <span class="project-category">earlier experiment</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">EchoMind</h3>
+            <p class="project-tagline">Conversational AI Exploration</p>
+            <p class="project-description">
+              A lightweight conversational AI project exploring intent, scoped responses and model-driven conversation.
+            </p>
+            <p class="project-note">yes, there was a chatbot era</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Gemini API</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/yash-29-08" target="_blank" rel="noopener" class="project-link-btn">
+                <i class="fab fa-github"></i> View Project ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3: Azure AI Case Study -->
+        <div class="project-card fade-in" id="project-3">
+          <div class="project-image">
+            <div class="project-img-placeholder">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-overlay">
+              <span class="project-category">research / product thinking</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Azure AI Case Study</h3>
+            <p class="project-tagline">Enterprise Adoption &amp; Trade-offs</p>
+            <p class="project-description">
+              A look at how Azure AI services hold up in practice — adoption, trade-offs and business use, not just
+              technical capability.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Microsoft Azure</span>
+              <span class="tech-tag">Cloud AI Services</span>
+              <span class="tech-tag">Research</span>
+              <span class="tech-tag">Presentation</span>
+              <span class="tech-tag">Product Thinking</span>
+            </div>
+            <div class="project-footer">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+       SECTION 5: EDUCATION
+  ============================= -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+
+      <h2 class="section-title fade-in">My <span>Education</span></h2>
+      <p class="section-subtitle fade-in">My academic journey so far</p>
+
+      <div class="timeline">
+
+        <!-- Timeline Item 1: College -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>B.Tech in Computer Science (Honours)</h3>
+              <span class="timeline-badge current">Currently Pursuing</span>
+            </div>
+            <p class="timeline-institution">GLA University</p>
+            <p class="timeline-year">2025 – 2029</p>
+            <p class="timeline-description">
+              Studying core CS subjects including Data Structures, Algorithms,
+              DBMS, Operating Systems, Computer Networks, and Object-Oriented
+              Programming. CGPA: 8.7 / 10 (Till Semester 2)
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2: Class 12 -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>Class 12th – Science (PCM + CS)</h3>
+              <span class="timeline-badge completed">Completed</span>
+            </div>
+            <p class="timeline-institution">Rajiv International School</p>
+            <p class="timeline-year">2022 – 2024</p>
+            <p class="timeline-description">
+              Completed higher secondary education with Physics, Chemistry,
+              Mathematics, and Computer Science. Scored 82% in Board Exams.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3: Class 10 -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>Class 10th – Secondary Education</h3>
+              <span class="timeline-badge completed">Completed</span>
+            </div>
+            <p class="timeline-institution">Rajiv International School</p>
+            <p class="timeline-year">2021 – 2022</p>
+            <p class="timeline-description">
+              Completed matriculation with distinction. Scored 93% in Board
+              Exams with Mathematics and Science as strong subjects.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+       SECTION 6: CERTIFICATIONS
+  ============================= -->
+  <section id="certifications" class="section">
+    <div class="container">
+
+      <h2 class="section-title fade-in">My <span>Certifications</span></h2>
+      <p class="section-subtitle fade-in">Courses, workshops, and verified credentials I've earned</p>
+
+      <div class="certs-grid">
+
+        <!-- Certificate 1: Microsoft Azure -->
+        <div class="cert-card fade-in" id="cert-1" data-cert-img="azure.jpg"
+          data-cert-title="Microsoft Certified: Azure Fundamentals">
+          <div class="cert-image" title="Click to view full certificate">
+            <img src="azure.jpg" alt="Microsoft Certified: Azure Fundamentals Certificate" loading="lazy" />
+            <span class="cert-badge"><i class="fas fa-cloud"></i> Cloud</span>
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">Microsoft Certified: Azure Fundamentals</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> Microsoft (AZ-900)</p>
+            <p class="cert-description">
+              Foundational knowledge of cloud concepts, core Azure architectural components, security, and governance.
+            </p>
+            <div class="cert-meta">
+              <span class="cert-date"><i class="fas fa-calendar-alt"></i> May 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 2: Intel Unnati -->
+        <div class="cert-card fade-in" id="cert-2" data-cert-img="intel.jpg"
+          data-cert-title="AI Algorithm Development with Python — Intel® Unnati">
+          <div class="cert-image" title="Click to view full certificate">
+            <img src="intel.jpg" alt="Intel Unnati AI Algorithm Development with Python Certificate" loading="lazy" />
+            <span class="cert-badge"><i class="fas fa-brain"></i> AI &amp; Python</span>
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">AI Algorithm Development with Python</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> Intel® Unnati &amp; Edulateral Foundation</p>
+            <p class="cert-description">
+              Hands-on workshop on essentials and implementation of AI algorithms at Intel® Unnati Data-Centric Lab, GLA
+              University.
+            </p>
+            <div class="cert-meta">
+              <span class="cert-date"><i class="fas fa-calendar-alt"></i> October 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 3: NEC AI Mastery -->
+        <div class="cert-card fade-in" id="cert-3" data-cert-img="nec.jpg"
+          data-cert-title="AI Mastery: Unlocking the Power of AI — NEC Corporation">
+          <div class="cert-image" title="Click to view full certificate">
+            <img src="nec.jpg" alt="NEC Corporation AI Mastery Certificate" loading="lazy" />
+            <span class="cert-badge"><i class="fas fa-robot"></i> Artificial Intelligence</span>
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">AI Mastery: Unlocking the Power of AI</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> NEC Corporation India</p>
+            <p class="cert-description">
+              Comprehensive course covering theoretical and practical knowledge in AI platforms and systems. Cert ID:
+              NEC1230.
+            </p>
+            <div class="cert-meta">
+              <span class="cert-date"><i class="fas fa-calendar-alt"></i> October 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 4: GUVI / HCL -->
+        <div class="cert-card fade-in" id="cert-4" data-cert-img="guvi.png"
+          data-cert-title="Generative AI Industry Connect — GUVI × HCL">
+          <div class="cert-image" title="Click to view full certificate">
+            <img src="guvi.png" alt="GUVI HCL Generative AI Industry Connect Certificate" loading="lazy" />
+            <span class="cert-badge"><i class="fas fa-sparkles"></i> Generative AI</span>
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">Generative AI Industry Connect</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> GUVI × HCL</p>
+            <p class="cert-description">
+              Mission Upskill India × TechFest Delhi Edition exploring emerging trends, tools, and industrial
+              applications of Generative AI.
+            </p>
+            <div class="cert-meta">
+              <span class="cert-date"><i class="fas fa-calendar-alt"></i> October 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 5: NSUT Innovision'25 -->
+        <div class="cert-card fade-in" id="cert-5" data-cert-img="nsut.jpg"
+          data-cert-title="INNOVISION'25 (3rd Rank) — NSUT">
+          <div class="cert-image" title="Click to view full certificate">
+            <img src="nsut.jpg" alt="NSUT INNOVISION'25 Certificate of Achievement" loading="lazy" />
+            <span class="cert-badge"><i class="fas fa-trophy"></i> 3rd Rank Award</span>
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">INNOVISION'25 — One Shot, One Line</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> Netaji Subhas University of Technology (NSUT)</p>
+            <p class="cert-description">
+              Secured 3rd Rank in the competitive "One Shot, One Line" event during INNOVISION'25 technical fest.
+            </p>
+            <div class="cert-meta">
+              <span class="cert-date"><i class="fas fa-calendar-alt"></i> November 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 6: CaseForge 2025 (IIT Kharagpur) -->
+        <div class="cert-card fade-in" id="cert-6" data-cert-img="caseforge.jpg"
+          data-cert-title="CaseForge 2025 — IIT Kharagpur">
+          <div class="cert-image" title="Click to view full certificate">
+            <img src="caseforge.jpg" alt="CaseForge 2025 Case Study Competition Certificate - IIT Kharagpur"
+              loading="lazy" />
+            <span class="cert-badge"><i class="fas fa-lightbulb"></i> Case Study</span>
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">CaseForge 2025 — Case Study Competition</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> IIT Kharagpur × Unstop</p>
+            <p class="cert-description">
+              Participated in CaseForge 2025, a nationwide case study competition organized by the Indian Institute of
+              Technology (IIT), Kharagpur.
+            </p>
+            <div class="cert-meta">
+              <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2025</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+       SECTION 8: CONTACT
+  ============================= -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+
+      <h2 class="section-title fade-in">Get In <span>Touch</span></h2>
+      <p class="section-subtitle fade-in">Feel free to reach out — I'd love to connect!</p>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info fade-in">
+          <h3>Let's Connect</h3>
+          <p>
+            Whether you have a project idea, want to collaborate, or just want
+            to say hi — my inbox is always open!
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:vardhanyash1970@email.com" class="contact-link">
+              <div class="contact-link-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">vardhanyash1970@email.com</span>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/yash-vardhan-748284382/" target="_blank" rel="noopener"
+              class="contact-link">
+              <div class="contact-link-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">linkedin.com/in/yash-vardhan</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/yash-29-08" target="_blank" rel="noopener" class="contact-link">
+              <div class="contact-link-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/yash-29-08</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ============================
+       FOOTER
+  ============================= -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Left: Copyright -->
+      <div class="footer-left">
+        <p class="footer-brand">Yash<span>Vardhan</span></p>
+        <p class="footer-copy">© 2025 Yash Vardhan. All rights reserved.</p>
+      </div>
+
+      <!-- Center: Quick nav links -->
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Right: Social icons -->
+      <div class="footer-right">
+        <div class="footer-socials">
+          <a href="https://github.com/yash-29-08" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yash-vardhan-748284382/" target="_blank" rel="noopener"
+            aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:vardhanyash1970@email.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ============================
+       CERTIFICATE PREVIEW MODAL / LIGHTBOX
+  ============================= -->
+  <div class="cert-modal" id="cert-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="cert-modal-backdrop" id="cert-modal-backdrop"></div>
+    <div class="cert-modal-dialog">
+      <div class="cert-modal-header">
+        <div class="cert-modal-title-group">
+          <i class="fas fa-award"></i>
+          <h3 class="cert-modal-title" id="cert-modal-title">Certificate Preview</h3>
+        </div>
+        <button class="cert-modal-close" id="cert-modal-close" aria-label="Close modal">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="cert-modal-body">
+        <img src="" alt="Enlarged Certificate View" id="cert-modal-img" />
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================
+       SCROLL TO TOP BUTTON (floating)
+  ============================= -->
+  <button class="scroll-top" id="scroll-top-btn" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
